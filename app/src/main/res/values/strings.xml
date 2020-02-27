@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Ratsel</string>
+    <string name="encode_text">Encode Text</string>
+    <string name="decode_text">Decode Text</string>
+    <string name="ssh_key_will_shown_here">SSH Key Will Shown Here</string>
+    <string name="generate_key">Generate Key</string>
+    <string name="type_your_message_here">Type Your Message Here</string>
+    <string name="encrypted_message">Encrypted Message</string>
+    <string name="type_your_secret_key_here">Type Your Secret Key Here</string>
+    <string name="type_your_encoded_message_here">Type Your Encoded Message Here</string>
+    <string name="decoded_message_will_shown_here">Decoded Message Will Shown Here</string>
+    <string name="decode">Decode</string>
+    <string name="encode">Encode</string>
+    <string name="secret_key_will_shown_here">Secret Key Will Shown Here</string>
+
+    <string-array name="bitLength">
+        <item>Key Length</item>
+        <item>128 Bit</item>
+        <item>256 Bit</item>
+    </string-array>
+</resources>

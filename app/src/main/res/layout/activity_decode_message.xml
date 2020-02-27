@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".decodeMessage"
+    android:gravity="center"
+    tools:ignore="ContentDescription"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/unlock"
+                android:layout_marginBottom="30dp"/>
+
+            <EditText
+                android:id="@+id/encryptionKey"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:hint="@string/type_your_secret_key_here"
+                android:background="@drawable/user_name"
+                android:maxLines="1"/>
+
+            <EditText
+                android:id="@+id/encryptedMessage"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/some_descriptions"
+                android:hint="@string/type_your_encoded_message_here"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:scrollbars="vertical" />
+
+            <EditText
+                android:id="@+id/decryptedMessage"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/some_descriptions"
+                android:hint="@string/decoded_message_will_shown_here"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:id="@+id/decode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/done_button"
+                android:layout_marginTop="30dp"
+                android:text="@string/decode"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
